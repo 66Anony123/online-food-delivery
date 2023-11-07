@@ -3,7 +3,7 @@ import Home from "../components/Home";
 const URL =[{
 name:'Home',
 element:<Home/>,
-path:"/home"
+path:"/"
 },
 {
     name: 'Login',

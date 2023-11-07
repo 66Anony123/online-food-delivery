@@ -7,7 +7,7 @@ const App = () => {
   
   return (
     <div>
-        <div className = "w-screen min-h-screen h-auto flex items-center justify-center">
+        <div className = "w-screen min-h-screen h-auto flex items-center justify-center text-red-700 bg-black">
  <Routes>
     {URL.map((item)=>{
         return(
