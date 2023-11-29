@@ -1,5 +1,5 @@
-import Login from "../components/Login";
-import Home from "../components/Home";
+import Login from "../layouts/Login";
+import Home from "../layouts/Home";
 const URL =[{
 name:'Home',
 element:<Home/>,
