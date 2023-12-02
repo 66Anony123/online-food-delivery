@@ -16,13 +16,13 @@ const [password,setPassword] = useState("");
 
 const [signUp,setSignUp] = useState(false);
 
-const firebaseAuth = getAuth(app);
+const firebaseAuth = getAuth(app); //initializes Firebase Authentication 
 const provider = new GoogleAuthProvider();
 
 const loginGoogle = async ()=>{
-  await signInWithPopup(firebaseAuth, provider).then((userCred)=>{
-    firebaseAuth.onAuthStateChanged(cred=>{
-      if(cred){
+  await signInWithPopup(firebaseAuth, provider).then((userCred)=>{  //signInWithPopup triggers a popup window for the user to sign in with Google.
+    firebaseAuth.onAuthStateChanged(cred=>{         //onAuthStateChanged listens for changes in the authentication state.
+      if(cred){                                 //commonly used to see whether a user is signed in or signed out
         console.log(cred);
       }
     })
